@@ -1,0 +1,29 @@
+:root {
+  /* --color-dark: #090a0a; */
+  --color-dark: #151516;
+  --color-light: #f9f9f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: var(--color-dark);
+}
