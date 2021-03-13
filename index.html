@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Dragonica | Оружейная</title>
   </head>
-  <body>
+  <body class="container">
     <header class="header">
       <div class="header__content">
         <ul class="header__nav">
@@ -77,16 +77,22 @@
         </div>
       </div>
     </header>
+
     <main class="hero-section">
-      <img class="hero-section__bg" src="img/hero.jpg" alt="Dragonica image" />
-      <img class="hero-logo" src="img/logo.png" alt="Dragonica logo" />
-      <a href="#download" class="cta">Начать игру</a>
+      <div class="hero-section__logo-group">
+        <img
+          class="hero-section__logo"
+          src="img/logo.png"
+          alt="Dragonica logo"
+        />
+        <!-- <a href="#download" class="hero-section__cta">Начать игру</a> -->
+      </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
             <a href="#">Главная</a>
           </li>
-          <li class="main-nav__list-item">
+          <li class="main-nav__list-item main-nav__list-item_current">
             <a href="#">Об игре</a>
           </li>
           <li class="main-nav__list-item">
@@ -99,11 +105,12 @@
             <a href="#">Поддержка</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="#">Скачать</a>
+            <span><a href="#">Скачать</a></span>
           </li>
         </ul>
       </nav>
     </main>
+
     <section class="page-section">
       <nav class="page-nav">
         <ul class="page-nav__list">
@@ -586,6 +593,7 @@
         <span class="material-icons-outlined"> arrow_right_alt </span>
       </div>
     </section>
+
     <div class="rating-mmotop">
       <a href="https://all.mmotop.ru/servers/16574/votes/new" target="_blank">
         <img
@@ -597,6 +605,7 @@
         />
       </a>
     </div>
-    <footer></footer>
+
+    <!-- <footer></footer> -->
   </body>
 </html>
