@@ -1,8 +1,6 @@
-:root {
-  /* --color-dark: #090a0a; */
-  --color-dark: #151516;
-  --color-light: #f9f9f9;
-}
+$color-dark: #08121b;
+$color-light: #f5f5f5;
+$color-primary-light: #fdf3b0;
 
 * {
   margin: 0;
@@ -26,6 +24,126 @@ body {
   font-size: 1.6rem;
   line-height: 1.4;
   color: var(--color-dark);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.item-strong {
+  font-weight: 600;
+  color: $color-primary-light;
+}
+
+.header {
+  font-size: 1.4rem;
+  color: #f4f2f2;
+  background-color: rgba($color-dark, 0.65);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  &__nav {
+    text-transform: uppercase;
+    display: flex;
+
+    &_item:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &_link {
+      padding-bottom: 3px;
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s ease-out;
+    }
+
+    &_link:hover {
+      border-bottom: 1px solid $color-primary-light;
+    }
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+
+    .profile__account {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+
+    .profile__account_icon,
+    .profile__messages_icon {
+      margin-right: 0.5rem;
+      color: $color-primary-light;
+    }
+
+    .profile__arrow-down {
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .profile__account_name {
+      margin-right: 2px;
+    }
+
+    .profile__account_name:hover + span,
+    .profile__arrow-down:hover,
+    .language__current:hover + span {
+      color: rgba($color-light, 0.6);
+    }
+
+    .profile__messages {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem;
+    }
+
+    .language {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-left: 3rem;
+
+      &__current {
+        display: flex;
+        align-items: center;
+        margin-right: 0.5rem;
+      }
+    }
+
+    .flag-russian {
+      background-image: url("../img/russian.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 16px;
+      width: 20px;
+      display: inline-block;
+    }
+  }
+}
+
+.hero-section {
+  overflow: hidden;
 }
 
 .results__item-icon {

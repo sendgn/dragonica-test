@@ -19,61 +19,67 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav__list-item">
-            <a href="#" class="header__nav-link">База знаний</a>
+      <div class="header__content">
+        <ul class="header__nav">
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">База знаний</a>
           </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link">Сообщество</a>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Сообщество</a>
           </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link">Поддержка</a>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Поддержка</a>
           </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link">Профиль</a>
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">Профиль</a>
           </li>
-          <li class="header__nav-item">
-            <a href="#" class="header__nav-link">
+          <li class="header__nav_item">
+            <a href="#" class="header__nav_link">
               <span class="item-strong">Начать игру</span>
             </a>
           </li>
         </ul>
-      </nav>
-      <div class="profile">
-        <div class="profile__account">
-          <span class="material-icons-outlined profile__account-icon"
-            >account_circle</span
-          >
-          <div class="profile__account-name">sendgn</div>
-          <span class="material-icons-outlined arrow-down"
-            >keyboard_arrow_down</span
-          >
-        </div>
-        <div class="profile__messages">
-          <div class="material-icons-outlined profile__messages-icon">
-            mark_chat_unread
+        <div class="profile">
+          <div class="profile__account">
+            <span class="material-icons-outlined profile__account_icon"
+              >account_circle</span
+            >
+            <div class="profile__account_name">sendgn</div>
+            <span class="material-icons-outlined profile__arrow-down"
+              >keyboard_arrow_down</span
+            >
           </div>
-          <div class="profile__messages-count">2</div>
-        </div>
-      </div>
-      <div class="language">
-        <div class="language__current">
-          <span class="flag flag-russian"></span>
-        </div>
-        <span class="material-icons-outlined arrow-down"
-          >keyboard_arrow_down</span
-        >
-        <div class="submenu languages">
-          <a href="#">
-            <span class="flag flag-english"></span>
-          </a>
+          <!-- TODO: implement submenu -->
+          <!-- <div class="submenu account-menu">
+            <p>Личный кабинет</p>
+            <p>Выйти</p>
+          </div> -->
+          <div class="profile__messages">
+            <div class="material-icons-outlined profile__messages_icon">
+              <a href="#">mark_chat_unread</a>
+            </div>
+            <div class="profile__messages_count">2</div>
+          </div>
+          <div class="language">
+            <div class="language__current">
+              <span class="flag flag-russian"></span>
+            </div>
+            <span class="material-icons-outlined profile__arrow-down"
+              >keyboard_arrow_down</span
+            >
+            <!-- TODO: implement submenu -->
+            <div class="submenu languages">
+              <a href="#">
+                <span class="flag flag-english"></span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
     <main class="hero-section">
-      <img src="img/hero.jpg" alt="Dragonica image" />
-      <img src="img/logo.png" alt="Dragonica logo" />
+      <img class="hero-section__bg" src="img/hero.jpg" alt="Dragonica image" />
+      <img class="hero-logo" src="img/logo.png" alt="Dragonica logo" />
       <a href="#download" class="cta">Начать игру</a>
       <nav class="main-nav">
         <ul class="main-nav__list">
