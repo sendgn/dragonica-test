@@ -9,10 +9,588 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
     <title>Dragonica | Оружейная</title>
   </head>
   <body>
-    <h1>Главная</h1>
+    <header class="header">
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__list-item">
+            <a href="#" class="header__nav-link">База знаний</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Сообщество</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Поддержка</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Профиль</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              <span class="item-strong">Начать игру</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="profile">
+        <div class="profile__account">
+          <span class="material-icons-outlined profile__account-icon"
+            >account_circle</span
+          >
+          <div class="profile__account-name">sendgn</div>
+          <span class="material-icons-outlined arrow-down"
+            >keyboard_arrow_down</span
+          >
+        </div>
+        <div class="profile__messages">
+          <div class="material-icons-outlined profile__messages-icon">
+            mark_chat_unread
+          </div>
+          <div class="profile__messages-count">2</div>
+        </div>
+      </div>
+      <div class="language">
+        <div class="language__current">
+          <span class="flag flag-russian"></span>
+        </div>
+        <span class="material-icons-outlined arrow-down"
+          >keyboard_arrow_down</span
+        >
+        <div class="submenu languages">
+          <a href="#">
+            <span class="flag flag-english"></span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="hero-section">
+      <img src="img/hero.jpg" alt="Dragonica image" />
+      <img src="img/logo.png" alt="Dragonica logo" />
+      <a href="#download" class="cta">Начать игру</a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">Об игре</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">Магазин</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">Форум</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">Поддержка</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">Скачать</a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+    <section class="page-section">
+      <nav class="page-nav">
+        <ul class="page-nav__list">
+          <li class="page-nav__list-item">
+            <a href="#">История</a>
+          </li>
+          <li class="page-nav__list-item">
+            <a href="#">Классы</a>
+          </li>
+          <li class="page-nav__list-item">
+            <a href="#">Новичку</a>
+          </li>
+          <li class="page-nav__list-item">
+            <a href="#">Монстры</a>
+          </li>
+          <li class="page-nav__list-item">
+            <a href="#">Задания Эвана</a>
+          </li>
+          <li class="page-nav__list-item">
+            <a href="#">Скриншоты</a>
+          </li>
+          <li class="page-nav__list-item active">
+            <a href="#">Оружейная</a>
+          </li>
+          <li class="page-nav__list-item">
+            <a href="#">Рулетка</a>
+          </li>
+        </ul>
+      </nav>
+      <h2 class="section-heading">Оружейная - узнай свою игру!</h2>
+      <form class="form">
+        <span class="material-icons-outlined">search</span>
+        <input type="text" placeholder="Поиск предмета" class="form__field" />
+        <select name="minLevel" class="form__field">
+          <option value="1">Мин. ур.</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+          <option value="32">32</option>
+          <option value="33">33</option>
+          <option value="34">34</option>
+          <option value="35">35</option>
+          <option value="36">36</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+          <option value="43">43</option>
+          <option value="44">44</option>
+          <option value="45">45</option>
+          <option value="46">46</option>
+          <option value="47">47</option>
+          <option value="48">48</option>
+          <option value="49">49</option>
+          <option value="50">50</option>
+          <option value="51">51</option>
+          <option value="52">52</option>
+          <option value="53">53</option>
+          <option value="54">54</option>
+          <option value="55">55</option>
+          <option value="56">56</option>
+          <option value="57">57</option>
+          <option value="58">58</option>
+          <option value="59">59</option>
+          <option value="60">60</option>
+          <option value="61">61</option>
+          <option value="62">62</option>
+          <option value="63">63</option>
+          <option value="64">64</option>
+          <option value="65">65</option>
+          <option value="66">66</option>
+          <option value="67">67</option>
+          <option value="68">68</option>
+          <option value="69">69</option>
+          <option value="70">70</option>
+          <option value="71">71</option>
+          <option value="72">72</option>
+          <option value="73">73</option>
+          <option value="74">74</option>
+          <option value="75">75</option>
+          <option value="76">76</option>
+          <option value="77">77</option>
+          <option value="78">78</option>
+          <option value="79">79</option>
+          <option value="80">80</option>
+          <option value="81">81</option>
+          <option value="82">82</option>
+          <option value="83">83</option>
+          <option value="84">84</option>
+          <option value="85">85</option>
+        </select>
+        <select name="maxLevel" class="form__field">
+          <option value="85">Макс. ур.</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+          <option value="32">32</option>
+          <option value="33">33</option>
+          <option value="34">34</option>
+          <option value="35">35</option>
+          <option value="36">36</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+          <option value="43">43</option>
+          <option value="44">44</option>
+          <option value="45">45</option>
+          <option value="46">46</option>
+          <option value="47">47</option>
+          <option value="48">48</option>
+          <option value="49">49</option>
+          <option value="50">50</option>
+          <option value="51">51</option>
+          <option value="52">52</option>
+          <option value="53">53</option>
+          <option value="54">54</option>
+          <option value="55">55</option>
+          <option value="56">56</option>
+          <option value="57">57</option>
+          <option value="58">58</option>
+          <option value="59">59</option>
+          <option value="60">60</option>
+          <option value="61">61</option>
+          <option value="62">62</option>
+          <option value="63">63</option>
+          <option value="64">64</option>
+          <option value="65">65</option>
+          <option value="66">66</option>
+          <option value="67">67</option>
+          <option value="68">68</option>
+          <option value="69">69</option>
+          <option value="70">70</option>
+          <option value="71">71</option>
+          <option value="72">72</option>
+          <option value="73">73</option>
+          <option value="74">74</option>
+          <option value="75">75</option>
+          <option value="76">76</option>
+          <option value="77">77</option>
+          <option value="78">78</option>
+          <option value="79">79</option>
+          <option value="80">80</option>
+          <option value="81">81</option>
+          <option value="82">82</option>
+          <option value="83">83</option>
+          <option value="84">84</option>
+          <option value="85">85</option>
+        </select>
+        <select name="slot" class="form__field">
+          <option value="allSlots" selected>Все слоты</option>
+          <option value="hairDye">Краска для волос</option>
+          <option value="haircut">Прическа</option>
+          <option value="face">Лицо</option>
+          <option value="shoulders">Плечи</option>
+          <option value="back">Спина</option>
+          <option value="glasses">Очки</option>
+          <option value="weapon">Оружие</option>
+          <option value="shield">Щит</option>
+          <option value="neck">Шея</option>
+          <option value="ears">Уши</option>
+          <option value="finger">Палец</option>
+          <option value="other">Прочее</option>
+          <option value="helmet">Шлем</option>
+          <option value="chest">Грудь</option>
+          <option value="pants">Штаны</option>
+          <option value="shoes">Обувь</option>
+          <option value="gloves">Перчатки</option>
+          <option value="map">Карта</option>
+          <option value="beast">Зверь</option>
+          <option value="furniture">Мебель</option>
+        </select>
+        <select name="class" class="form__field">
+          <option value="allClasses" selected>Все классы</option>
+          <option value="warrior">Воин</option>
+          <option value="mage">Маг</option>
+          <option value="archer">Лучник</option>
+          <option value="thief">Вор</option>
+          <option value="knight">Рыцарь</option>
+          <option value="gladiator">Гладиатор</option>
+          <option value="acolyte">Служитель</option>
+          <option value="enchanter">Чародей</option>
+          <option value="hunter">Охотник</option>
+          <option value="shooter">Стрелок</option>
+          <option value="jester">Шут</option>
+          <option value="assasin">Ассасин</option>
+          <option value="paladin">Паладин</option>
+          <option value="spartan">Спартанец</option>
+          <option value="priest">Жрец</option>
+          <option value="archmage">Архимаг</option>
+          <option value="pathfinder">Следопыт</option>
+          <option value="sniper">Снайпер</option>
+          <option value="harlequin">Арлекин</option>
+          <option value="ninja">Ниндзя</option>
+          <option value="guard">Страж</option>
+          <option value="champion">Чемпион</option>
+          <option value="bishop">Епископ</option>
+          <option value="heretic">Еретик</option>
+          <option value="scout">Разведчик</option>
+          <option value="stormTrooper">Штурмовик</option>
+          <option value="joker">Джокер</option>
+          <option value="phantom">Фантом</option>
+        </select>
+        <button type="submit" class="btn">Найти</button>
+      </form>
+      <div class="results">
+        <h3 class="results__heading">
+          Результаты поиска ( <span>35631</span> ):
+        </h3>
+        <table class="results__table">
+          <thead>
+            <th>Название предмета</th>
+            <th>Уровень</th>
+            <th>Классы</th>
+            <th>Слот</th>
+            <th>Надето</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div
+                  class="results__item-icon"
+                  style="
+                    background: url('img/iconcs_bl001_s.png');
+                    background-position: -240px -160px;
+                  "
+                ></div>
+                <p>Шарик дружбы</p>
+              </td>
+              <td>1</td>
+              <td>
+                <img src="img/male.gif" title="Люди" alt="Люди" />
+                <img src="img/female.gif" title="Люди" alt="Люди" />
+              </td>
+              <td>Прочее</td>
+              <td>24765</td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  class="results__item-icon"
+                  style="
+                    background: url('img/iconcs_pet001_s.png');
+                    background-position: -160px -280px;
+                  "
+                ></div>
+                <p>Шальной ящер</p>
+              </td>
+              <td>1</td>
+              <td>
+                <img src="img/male.gif" title="Люди" alt="Люди" />
+                <img src="img/female.gif" title="Люди" alt="Люди" />
+              </td>
+              <td>Зверь</td>
+              <td>15957</td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  class="results__item-icon"
+                  style="
+                    background: url('img/iconetc06.png');
+                    background-position: -320px -360px;
+                  "
+                ></div>
+                <p>Знак Братства дракона</p>
+              </td>
+              <td>20</td>
+              <td>
+                <img src="img/male.gif" title="Люди" alt="Люди" />
+                <img src="img/female.gif" title="Люди" alt="Люди" />
+              </td>
+              <td>Шея</td>
+              <td>9295</td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  class="results__item-icon"
+                  style="
+                    background: url('img/iconunique01.png');
+                    background-position: -0px -0px;
+                  "
+                ></div>
+                <p>Кольцо силы I</p>
+              </td>
+              <td>7</td>
+              <td>
+                <img src="img/male.gif" title="Люди" alt="Люди" />
+                <img src="img/female.gif" title="Люди" alt="Люди" />
+              </td>
+              <td>Палец</td>
+              <td>8212</td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  class="results__item-icon"
+                  style="
+                    background: url('img/iconsys06.png');
+                    background-position: -0px -0px;
+                  "
+                ></div>
+                <p>Редкое клеверное кольцо</p>
+              </td>
+              <td>5</td>
+              <td>
+                <img src="img/male.gif" title="Люди" alt="Люди" />
+                <img src="img/female.gif" title="Люди" alt="Люди" />
+              </td>
+              <td>Палец</td>
+              <td>6861</td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  class="results__item-icon"
+                  style="
+                    background: url('img/iconcommon01.png');
+                    background-position: -360px -440px;
+                  "
+                ></div>
+                <p>Противогаз</p>
+              </td>
+              <td>19</td>
+              <td>
+                <img src="img/male.gif" title="Люди" alt="Люди" />
+                <img src="img/female.gif" title="Люди" alt="Люди" />
+              </td>
+              <td>Шлем</td>
+              <td>5897</td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  class="results__item-icon"
+                  style="
+                    background: url('img/iconmag01.png');
+                    background-position: -240px -0px;
+                  "
+                ></div>
+                <p>Посох ученика</p>
+              </td>
+              <td>1</td>
+              <td>
+                <div
+                  class="results__classes"
+                  title="Еретик"
+                  style="background-position: -130px -78px"
+                ></div>
+              </td>
+              <td>Оружие</td>
+              <td>4977</td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  class="results__item-icon"
+                  style="
+                    background: url('img/iconwar01.png');
+                    background-position: -240px -0px;
+                  "
+                ></div>
+                <p>Бронзовый меч</p>
+              </td>
+              <td>1</td>
+              <td>
+                <div
+                  class="results__classes"
+                  title="Чемпион"
+                  style="background-position: -78px -78px"
+                ></div>
+              </td>
+              <td>Оружие</td>
+              <td>4899</td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  class="results__item-icon"
+                  style="
+                    background: url('img/iconsys03.png');
+                    background-position: -120px -400px;
+                  "
+                ></div>
+                <p>Ремень Фаррелла</p>
+              </td>
+              <td>21</td>
+              <td>
+                <img src="img/male.gif" title="Люди" alt="Люди" />
+                <img src="img/female.gif" title="Люди" alt="Люди" />
+              </td>
+              <td>Пояс</td>
+              <td>4726</td>
+            </tr>
+            <tr>
+              <td>
+                <div
+                  class="results__item-icon"
+                  style="
+                    background: url('img/iconsys06.png');
+                    background-position: -280px -320px;
+                  "
+                ></div>
+                <p>Редкие клеверные серьги</p>
+              </td>
+              <td>5</td>
+              <td>
+                <img src="img/male.gif" title="Люди" alt="Люди" />
+                <img src="img/female.gif" title="Люди" alt="Люди" />
+              </td>
+              <td>Уши</td>
+              <td>4711</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="results__page-number">
+          Страница <span>1</span> из <span>1019</span>
+        </p>
+        <span class="material-icons-outlined"> arrow_right_alt </span>
+      </div>
+    </section>
+    <div class="rating-mmotop">
+      <a href="https://all.mmotop.ru/servers/16574/votes/new" target="_blank">
+        <img
+          src="https://cdn.amtsft.com/z5oOCqumV3he7R1WTDMKg9kUS8.png"
+          border="0"
+          id="mmotopratingimg"
+          alt="Рейтинг серверов mmotop"
+          style="cursor: pointer"
+        />
+      </a>
+    </div>
+    <footer></footer>
   </body>
 </html>
