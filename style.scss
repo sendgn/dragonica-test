@@ -393,6 +393,7 @@ a {
   }
 }
 
+// Table of results
 .results {
   display: flex;
   flex-direction: column;
@@ -498,6 +499,81 @@ a {
           }
         }
       }
+    }
+  }
+
+  &__item {
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease-out;
+    position: relative;
+
+    &:hover {
+      border-bottom: 1px solid $color-light-2;
+    }
+  }
+
+  // Item information pop up window
+  .item-info {
+    background-color: rgba(#ffeabc, 0.85);
+    padding: 2rem;
+    color: $color-dark;
+    border: 2px solid rgba($color-dark, 0.4);
+    border-radius: 5px;
+    font-weight: 500;
+
+    // opacity: 0;
+    // visibility: hidden;
+    position: absolute;
+    top: -1rem;
+    margin-left: 2rem;
+    min-width: 400px;
+    z-index: 10;
+    text-align: left;
+
+    .stats {
+      color: #9c0f51;
+    }
+
+    & > div:not(:last-child) {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid transparent;
+      border-image: linear-gradient(
+        to right,
+        rgba($color-dark-2, 0) 0%,
+        $color-dark-2 50%,
+        rgba($color-dark-2, 0) 100%
+      );
+      border-image-slice: 1;
+    }
+
+    & > div:not(:first-child) {
+      padding-top: 1rem;
+    }
+
+    h4 {
+      margin-bottom: 2px;
+      font-weight: 600;
+    }
+
+    &__heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .results__item-icon {
+        border: none;
+      }
+    }
+
+    &__name-group {
+      display: flex;
+    }
+
+    &__name {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 
