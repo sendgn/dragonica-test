@@ -143,7 +143,12 @@
       <h2 class="section-heading">Оружейная - узнай свою игру!</h2>
       <form class="form">
         <span class="material-icons-outlined">search</span>
-        <input type="text" placeholder="Поиск предмета" class="form__field" />
+        <input
+          type="text"
+          placeholder="Поиск предмета"
+          class="form__field form__search-input"
+        />
+
         <select name="minLevel" class="form__field">
           <option value="1">Мин. ур.</option>
           <option value="1">1</option>
@@ -398,7 +403,7 @@
                     background-position: -240px -160px;
                   "
                 ></div>
-                <p>Шарик дружбы</p>
+                <p><a href="#">Шарик дружбы</a></p>
               </td>
               <td>1</td>
               <td>
@@ -417,7 +422,7 @@
                     background-position: -160px -280px;
                   "
                 ></div>
-                <p>Шальной ящер</p>
+                <p><a href="#">Шальной ящер</a></p>
               </td>
               <td>1</td>
               <td>
@@ -436,7 +441,7 @@
                     background-position: -320px -360px;
                   "
                 ></div>
-                <p>Знак Братства дракона</p>
+                <p><a href="#">Знак Братства дракона</a></p>
               </td>
               <td>20</td>
               <td>
@@ -455,7 +460,7 @@
                     background-position: -0px -0px;
                   "
                 ></div>
-                <p>Кольцо силы I</p>
+                <p><a href="#">Кольцо силы I</a></p>
               </td>
               <td>7</td>
               <td>
@@ -474,7 +479,7 @@
                     background-position: -0px -0px;
                   "
                 ></div>
-                <p>Редкое клеверное кольцо</p>
+                <p><a href="#">Редкое клеверное кольцо</a></p>
               </td>
               <td>5</td>
               <td>
@@ -493,7 +498,7 @@
                     background-position: -360px -440px;
                   "
                 ></div>
-                <p>Противогаз</p>
+                <p><a href="#">Противогаз</a></p>
               </td>
               <td>19</td>
               <td>
@@ -512,7 +517,7 @@
                     background-position: -240px -0px;
                   "
                 ></div>
-                <p>Посох ученика</p>
+                <p><a href="#">Посох ученика</a></p>
               </td>
               <td>1</td>
               <td>
@@ -534,7 +539,7 @@
                     background-position: -240px -0px;
                   "
                 ></div>
-                <p>Бронзовый меч</p>
+                <p><a href="#">Бронзовый меч</a></p>
               </td>
               <td>1</td>
               <td>
@@ -556,7 +561,7 @@
                     background-position: -120px -400px;
                   "
                 ></div>
-                <p>Ремень Фаррелла</p>
+                <p><a href="#">Ремень Фаррелла</a></p>
               </td>
               <td>21</td>
               <td>
@@ -575,7 +580,7 @@
                     background-position: -280px -320px;
                   "
                 ></div>
-                <p>Редкие клеверные серьги</p>
+                <p><a href="#">Редкие клеверные серьги</a></p>
               </td>
               <td>5</td>
               <td>
@@ -587,10 +592,16 @@
             </tr>
           </tbody>
         </table>
-        <p class="results__page-number">
-          Страница <span>1</span> из <span>1019</span>
-        </p>
-        <span class="material-icons-outlined"> arrow_right_alt </span>
+        <div class="results__page-number_group">
+          <p class="results__page-number">
+            Страница <span>1</span> из <span>1019</span>
+          </p>
+          <a href="#"
+            ><span class="material-icons-outlined arrow-btn">
+              arrow_right_alt
+            </span></a
+          >
+        </div>
       </div>
     </section>
 
