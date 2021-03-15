@@ -108,7 +108,6 @@ a {
       display: flex;
       align-items: center;
       margin-right: 1rem;
-      cursor: pointer;
     }
 
     .profile__account_icon,
@@ -124,6 +123,31 @@ a {
 
     .profile__account_name {
       margin-right: 2px;
+      cursor: pointer;
+    }
+
+    .profile__account_menu {
+      font-size: 1.2rem;
+      font-weight: 500;
+      position: absolute;
+      top: 6rem;
+      width: 10rem;
+      background-color: rgba($color-light-2, 0.85);
+      color: #333;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s ease-in-out;
+
+      p:first-child {
+        padding-bottom: 1.2rem;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
     }
 
     .profile__account_name:hover + span,
@@ -149,16 +173,42 @@ a {
         align-items: center;
         margin-right: 0.5rem;
       }
+
+      &__menu {
+        position: absolute;
+        top: 5.2rem;
+        width: 4rem;
+        border: 1px solid transparent;
+        border-image: linear-gradient(
+          to bottom,
+          rgba($color-light-2, 0) 0%,
+          rgba($color-light-2, 0.5) 100%
+        );
+        border-image-slice: 1;
+        padding: 3px;
+        margin-left: -3px;
+
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease-in-out;
+      }
     }
 
-    .flag-russian {
-      background-image: url("../img/russian.png");
+    .flag {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       height: 16px;
       width: 20px;
-      display: inline-block;
+      display: block;
+    }
+
+    .flag-russian {
+      background-image: url("../img/russian.png");
+    }
+
+    .flag-english {
+      background-image: url("../img/english.jpg");
     }
   }
 }
