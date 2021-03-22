@@ -11,7 +11,7 @@ const resultsNumberGroup = document.querySelector(
 );
 const itemInfos = document.querySelectorAll(".item-info");
 // item-info on the page
-const itemInfoPage = document.querySelector(".item-info-page");
+const itemInfoPageContent = document.querySelector(".item-info-page__content");
 
 resultsTable.style.display = "none";
 resultsHeading.style.display = "none";
@@ -24,11 +24,15 @@ const currentItemInfo = resultItems[currentItemNumber].firstElementChild;
 // make pop-up info visible
 currentItemInfo.classList.add("item-info__on-page");
 
+// how-to-get block for currentItem
+const howToGetCurrentItem = itemInfos[currentItemNumber].nextElementSibling;
+
 // add this item to a separate div as a second child
 // first one is the div heading
-itemInfoPage.appendChild(currentItemInfo);
+itemInfoPageContent.appendChild(currentItemInfo);
+itemInfoPageContent.appendChild(howToGetCurrentItem);
 
-console.log(currentItemInfo);
+console.log(itemInfoPageContent);
 
 // TODO: reuse this code from script.js
 // account menu
