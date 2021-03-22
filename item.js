@@ -27,12 +27,16 @@ currentItemInfo.classList.add("item-info__on-page");
 // how-to-get block for currentItem
 const howToGetCurrentItem = itemInfos[currentItemNumber].nextElementSibling;
 
+// more-info
+// const moreInfo = resultItems[currentItemNumber].lastElementChild;
+
 // add this item to a separate div as a second child
 // first one is the div heading
 itemInfoPageContent.appendChild(currentItemInfo);
 itemInfoPageContent.appendChild(howToGetCurrentItem);
+// itemInfoPageContent.appendChild(moreInfo);
 
-console.log(itemInfoPageContent);
+console.log(moreInfo);
 
 // TODO: reuse this code from script.js
 // account menu
