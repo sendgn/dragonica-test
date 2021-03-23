@@ -49,6 +49,10 @@ a {
   color: inherit;
 }
 
+h2 {
+  font-weight: 400;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -312,21 +316,6 @@ a {
   }
 }
 
-.section-heading {
-  font-weight: 400;
-  font-size: 3rem;
-  margin: 2.5rem 0 6rem 0;
-  padding: 2rem 4rem 2rem 4rem;
-  border-bottom: 1px solid $color-light-2;
-  border-image: linear-gradient(
-    to right,
-    rgba($color-light-2, 0) 0%,
-    rgba($color-light-2, 0.45) 50%,
-    rgba($color-light-2, 0) 100%
-  );
-  border-image-slice: 1;
-}
-
 .item-strong {
   font-weight: 600;
   color: $color-primary-light;
@@ -341,7 +330,8 @@ a {
 
   .page-nav {
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.35rem;
+    font-weight: 300;
     background: linear-gradient(
       to right,
       rgba($color-dark, 0) 0%,
@@ -366,7 +356,7 @@ a {
     }
 
     &__list-item:not(:last-child) {
-      border-right: 1px solid $color-light-2;
+      border-right: 1px solid rgba($color-light-2, 0.5);
     }
 
     &__list-item a {
@@ -380,6 +370,32 @@ a {
       border-bottom: 1px solid $color-primary-light;
     }
   }
+
+  &__heading-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+
+    .section-heading {
+      font-weight: 300;
+      font-size: 3.2rem;
+      margin: 2.5rem 0 6rem 0;
+      padding: 2rem 0;
+      border-bottom: 1px solid $color-light-2;
+      border-image: linear-gradient(
+        to right,
+        rgba($color-light-2, 1) 0%,
+        rgba($color-light-2, 0) 100%
+      );
+      border-image-slice: 1;
+    }
+
+    img {
+      width: 40%;
+      height: auto;
+    }
+  }
 }
 
 .form {
@@ -388,6 +404,8 @@ a {
   align-items: center;
   margin-bottom: 5rem;
   margin-left: -2rem;
+
+  justify-content: flex-end;
 
   &__field {
     border: 1px solid #979797;
@@ -410,7 +428,8 @@ a {
 
   &__search-input {
     padding-left: 4rem;
-    margin-left: -0.8rem;
+    margin-left: -0.6rem;
+    width: 50%;
   }
 
   & span {
@@ -418,6 +437,14 @@ a {
     padding: 0 0.5rem;
     z-index: 10;
     color: $color-light-2;
+  }
+
+  // TODO: implement advanced search
+  & select[name="minLevel"],
+  & select[name="maxLevel"],
+  & select[name="slot"],
+  & select[name="class"] {
+    display: none;
   }
 }
 
@@ -446,21 +473,37 @@ a {
   align-items: center;
   border: 1px solid $color-light-2;
   border-radius: 1rem;
-  padding: 2rem 4rem;
+  padding: 2.5rem 4rem;
   background-color: rgba($color-dark, 0.65);
   // background-image: linear-gradient(
-  //   to bottom,
-  //   rgba($color-dark, 0.65) 0%,
-  //   rgba($color-dark-2, 1) 100%
+  //   to right,
+  //   rgba($color-dark, 0.1) 0%,
+  //   rgba($color-dark, 0.6) 100%
   // );
   margin-bottom: 8rem;
   width: 960px;
 
   &__heading {
-    font-size: 2.6rem;
-    font-weight: 400;
+    font-size: 2.5rem;
+    font-weight: 300;
     margin-bottom: 3rem;
     margin-top: 2.5rem;
+
+    width: 100%;
+    border-bottom: 1px solid $color-light-2;
+    border-image: linear-gradient(
+      to right,
+      rgba($color-light-2, 1) 0%,
+      rgba($color-light-2, 0) 100%
+    );
+    border-image-slice: 1;
+    padding-bottom: 1.2rem;
+
+    & span {
+      font-size: 2.2rem;
+      letter-spacing: 0.12rem;
+      color: rgba($color-light-2, 0.7);
+    }
   }
 
   &__item-icon {
@@ -499,15 +542,16 @@ a {
       & th {
         padding: 1rem 3.5rem;
         color: $color-dark;
+        font-weight: 500;
 
         &:first-child {
-          border-top-left-radius: 1.5rem;
-          border-bottom-left-radius: 1.5rem;
+          border-top-left-radius: 1.2rem;
+          border-bottom-left-radius: 1.2rem;
         }
 
         &:last-child {
-          border-top-right-radius: 1.5rem;
-          border-bottom-right-radius: 1.5rem;
+          border-top-right-radius: 1.2rem;
+          border-bottom-right-radius: 1.2rem;
         }
       }
     }
@@ -539,7 +583,7 @@ a {
         & td {
           padding: 1.5rem;
           text-align: center;
-          background-color: rgba($color-dark, 0.65);
+          // background-color: rgba($color-dark, 0.65);
           font-size: 1.4rem;
         }
 
