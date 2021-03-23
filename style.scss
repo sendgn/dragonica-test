@@ -378,8 +378,8 @@ h2 {
     margin-bottom: 2rem;
 
     .section-heading {
-      font-weight: 300;
-      font-size: 3.2rem;
+      font-weight: 200;
+      font-size: 3.6rem;
       margin: 2.5rem 0 6rem 0;
       padding: 2rem 0;
       border-bottom: 1px solid $color-light-2;
@@ -403,7 +403,6 @@ h2 {
   display: flex;
   align-items: center;
   margin-bottom: 5rem;
-  margin-left: -2rem;
 
   justify-content: flex-end;
 
@@ -440,12 +439,12 @@ h2 {
   }
 
   // TODO: implement advanced search
-  & select[name="minLevel"],
-  & select[name="maxLevel"],
-  & select[name="slot"],
-  & select[name="class"] {
-    display: none;
-  }
+  // & select[name="minLevel"],
+  // & select[name="maxLevel"],
+  // & select[name="slot"],
+  // & select[name="class"] {
+  //   display: none;
+  // }
 }
 
 .btn {
@@ -471,7 +470,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid $color-light-2;
+  border: 1px solid rgba($color-light-2, 0.7);
   border-radius: 1rem;
   padding: 2.5rem 4rem;
   background-color: rgba($color-dark, 0.65);
