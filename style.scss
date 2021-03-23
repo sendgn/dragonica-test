@@ -509,12 +509,6 @@ a {
           border-top-right-radius: 1.5rem;
           border-bottom-right-radius: 1.5rem;
         }
-
-        // &:nth-child(3),
-        // &:nth-child(4),
-        // &:nth-child(5) {
-        //   display: none;
-        // }
       }
     }
 
@@ -683,27 +677,33 @@ a {
     }
   }
 
+  // Right side of item info page
+  .item-info-page__right-side {
+    width: 420px;
+    color: rgba($color-light-2, 0.85);
+    font-weight: 300;
+  }
+
   // HOW TO GET BLOCK
   .how-to-get {
-    width: 420px;
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
 
     background-color: $color-dark;
-    padding: 2.5rem 0;
-    color: rgba($color-light-2, 0.8);
+    padding: 2.5rem 3.5rem;
     border: 1px solid rgba($color-light, 0.4);
+    margin-bottom: 4rem;
 
     &__container {
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
     }
 
     &__heading {
       font-weight: 400;
-      font-size: 1.8rem;
       margin-bottom: 1.6rem;
       padding-bottom: 0.7rem;
       border-bottom: 1px solid $color-light-2;
@@ -713,6 +713,7 @@ a {
         rgba($color-light-2, 0) 100%
       );
       border-image-slice: 1;
+      color: #fdf3b0;
     }
 
     &__text-group {
@@ -722,32 +723,35 @@ a {
 
       & p {
         font-weight: 300;
-        color: #fdf3b0;
-      }
-
-      & span {
-        display: block;
-        cursor: pointer;
-        font-size: 2.5rem;
-        color: $color-light;
       }
     }
   }
 
   .more-info {
     border: 1px solid rgba($color-light, 0.4);
-    width: 420px;
-    padding: 2.5rem 0;
-    background-color: rgba($color-dark, 0.2);
-    color: rgba($color-light-2, 0.8);
+    padding: 2.5rem 3.5rem;
+    background-color: rgba($color-dark, 1);
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
 
     & p:not(:last-child) {
       margin-bottom: 1rem;
     }
+  }
+
+  // quality colors
+  .elite {
+    color: #3369ff;
+  }
+
+  .mythic {
+    color: #ca2bb0;
+  }
+
+  .legendary {
+    color: #d34c5e;
   }
 
   // Change some styles for pop-up item-info to make it visible

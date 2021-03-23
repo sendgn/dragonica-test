@@ -24,17 +24,20 @@ const currentItemInfo = resultItems[currentItemNumber].firstElementChild;
 // make pop-up info visible
 currentItemInfo.classList.add("item-info__on-page");
 
+// right side of item-info page
+const itemInfoRightSide = document.querySelector(".item-info-page__right-side");
+
 // how-to-get block for currentItem
 const howToGetCurrentItem = itemInfos[currentItemNumber].nextElementSibling;
 
 // more-info
-// const moreInfo = resultItems[currentItemNumber].lastElementChild;
+const moreInfo = resultItems[currentItemNumber].lastElementChild;
 
 // add this item to a separate div as a second child
 // first one is the div heading
-itemInfoPageContent.appendChild(currentItemInfo);
-itemInfoPageContent.appendChild(howToGetCurrentItem);
-// itemInfoPageContent.appendChild(moreInfo);
+itemInfoPageContent.prepend(currentItemInfo);
+itemInfoRightSide.appendChild(howToGetCurrentItem);
+itemInfoRightSide.appendChild(moreInfo);
 
 console.log(moreInfo);
 
