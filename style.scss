@@ -675,6 +675,23 @@ a {
       justify-content: space-between;
       align-items: flex-start;
     }
+
+    .item-info {
+      border: 2px solid rgba($color-dark-2, 0.4);
+      border-radius: 10px;
+
+      h4 {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #000d58;
+      }
+
+      &__heading {
+        .results__item-icon {
+          margin-right: 1.5rem;
+        }
+      }
+    }
   }
 
   // Right side of item info page
