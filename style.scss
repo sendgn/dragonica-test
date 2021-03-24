@@ -371,41 +371,44 @@ h2 {
     }
   }
 
-  &__heading-group {
+  &__head-group {
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: flex-start;
+    justify-content: center;
     margin-bottom: 2rem;
+
+    &_left-side {
+      margin-left: 8rem;
+    }
 
     .section-heading {
       font-weight: 200;
-      font-size: 3.6rem;
-      // margin: 2.5rem 0 6rem 0;
-      margin-left: 7.1rem;
+      font-size: 3.5rem;
       padding: 2rem 0;
       border-bottom: 1px solid $color-light-2;
       border-image: linear-gradient(
         to right,
-        rgba($color-light-2, 1) 0%,
-        rgba($color-light-2, 0) 100%
+        rgba(#ffeabc, 1) 0%,
+        rgba(#ffeabc, 0) 100%
       );
       border-image-slice: 1;
+      margin-top: 4rem;
     }
 
     img {
-      width: 40%;
+      max-width: 100%;
       height: auto;
     }
   }
 }
 
 .form {
-  width: 960px;
   display: flex;
-  align-items: center;
-  margin-bottom: 5rem;
-
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5rem 0 0 0;
 
   &__field {
     border: 1px solid #979797;
@@ -414,9 +417,6 @@ h2 {
     background-color: $color-dark;
     font-family: inherit;
     color: #f4f2f2;
-  }
-
-  &__field {
     margin-right: 1.5rem;
     transition: all 0.25s ease-out;
   }
@@ -426,17 +426,47 @@ h2 {
     box-shadow: 0 0 3px $color-primary-light;
   }
 
+  &__search-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__search-input-group {
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+
   &__search-input {
     padding-left: 4rem;
-    margin-left: -0.6rem;
-    width: 50%;
+    width: 100%;
   }
 
   & span {
-    margin-right: -3.5rem;
+    margin-right: -4rem;
     padding: 0 0.5rem;
     z-index: 10;
     color: $color-light-2;
+  }
+
+  &__advanced-search-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+    border: 1px solid orangered;
+
+    &__advanced-search-heading {
+      margin: 3rem 0;
+      justify-self: flex-end;
+    }
+
+    .form__field {
+      margin-bottom: 1rem;
+      width: 35%;
+    }
   }
 
   // TODO: implement advanced search
@@ -493,8 +523,8 @@ h2 {
     border-bottom: 1px solid $color-light-2;
     border-image: linear-gradient(
       to right,
-      rgba($color-light-2, 1) 0%,
-      rgba($color-light-2, 0) 100%
+      rgba(#ffeabc, 1) 0%,
+      rgba(#ffeabc, 0) 100%
     );
     border-image-slice: 1;
     padding-bottom: 1.2rem;
